@@ -1,0 +1,29 @@
+发现秘密了吗？答案提交flag{}括号内的值。
+Active code page: 65001
+PS C:\Users\lenovo> nc 101.71.29.5 10003
+=============================
+赢了我就慢慢告诉你答案哦
+游戏规则:
+'0': 石头
+'1': 剪刀
+'2':  布
+例如：
+输入 2
+石头(0) --> WIN! <--   布(2)
+输入 1
+石头(0) --> LOSE <-- 剪刀(1)
+=============================
+ROUND 0 (0 /20):
+-------
+< Bye Bye >
+-------
+ \
+  \
+   \ >()_
+       (__)__ _
+Traceback (most recent call last):
+  File "/home/ctf/rps.py", line 58, in <module>
+    answer = raw_input('ROUND %s (%s /20):'%(r,win))
+  File "/home/ctf/rps.py", line 15, in handler
+    raise Exception("Out time")
+Exception: Out time
